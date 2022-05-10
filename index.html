@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>வணக்கம் டாக்டர்</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <meta name="theme-color" content="#7952b3">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      .hellodoccard {
+          padding-top: 0px;
+      }
+      .disable-div {
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body>
+    
+<header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">வணக்கம் டாக்டர்</h4>
+          <p class="text-muted">இது நோயாளி செவிலியர் தொடர்புக்கான சோதனை விண்ணப்பம்.</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">&nbsp;</h4>
+          <ul class="list-unstyled">
+            <!--<li><a href="#" class="text-white">Follow on Twitter</a></li>
+            <li><a href="#" class="text-white">Like on Facebook</a></li>
+            <li><a href="#" class="text-white">Email me</a></li>-->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+        <strong>வணக்கம்</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!--<section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Album example</h1>
+        <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+        <p>
+          <a href="#" class="btn btn-primary my-2">Main call to action</a>
+          <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+        </p>
+      </div>
+    </div>
+  </section> -->
+
+  <section>
+    <div class="b-example-divider"></div>
+
+    <div class="container px-4 py-5" id="icon-grid">
+        <h2 class="pb-2 border-bottom">நான்</h2>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+        <div class="col d-flex align-items-start hellodoccard" id="thirsty" onclick="playMusic('thirsty');">
+            <img class="img-fluid" src="icons8-sparkling-water-48.png"></img>
+            <div style="margin-left:10px">
+                <h4 class="fw-bold mb-0 mx-auto">தாகம்</h4>
+                <p>எனக்கு தாகமாக இருக்கிறது.</p>
+            </div>
+        </div> 
+        <div class="col d-flex align-items-start hellodoccard" id="hungry" onclick="playMusic('hungry');">
+            <img src="icons8-meal-64.png"></img>
+            <div style="margin-left:10px">
+            <h4 class="fw-bold mb-0">பசிக்கிறது</h4>
+            <p>எனக்கு பசிக்கிறது.</p>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start hellodoccard" id="tired" onclick="playMusic('tired');">
+            <img src="icons8-tired-64.png"></img>
+            <div style="margin-left:10px">
+                <h4 class="fw-bold mb-0 ">சோர்வாக</h4>
+                <p>நான் சோர்வாக இருக்கிறேன்.</p>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start hellodoccard" id="sleepy" onclick="playMusic('sleepy');">
+            <img src="icons8-sleep-64.png"></img>
+            <div style="margin-left:10px">
+                <h4 class="fw-bold mb-0">தூக்கம்</h4>
+                <p>எனக்கு தூக்கம் வருகிறது.</p>
+            </div>
+        </div>
+        <!--<div class="col d-flex align-items-start">
+            <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#speedometer2"/></svg>
+            <div>
+            <h4 class="fw-bold mb-0">Featured title</h4>
+            <p>Paragraph of text beneath the heading to explain the heading.</p>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"/></svg>
+            <div>
+            <h4 class="fw-bold mb-0">Featured title</h4>
+            <p>Paragraph of text beneath the heading to explain the heading.</p>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"/></svg>
+            <div>
+            <h4 class="fw-bold mb-0">Featured title</h4>
+            <p>Paragraph of text beneath the heading to explain the heading.</p>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools"/></svg>
+            <div>
+            <h4 class="fw-bold mb-0">Featured title</h4>
+            <p>Paragraph of text beneath the heading to explain the heading.</p>
+            </div>
+        </div> -->
+        </div>
+    </div>
+    </section>
+</main>
+
+<footer class="text-muted py-5">
+  <div class="container">
+    <p class="float-end mb-1">
+      <!--<a href="#">Back to top</a>-->
+    </p>
+    <!--<p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+    <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="/docs/5.1/getting-started/introduction/">getting started guide</a>.</p>-->
+  </div>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" crossorigin="anonymous"></script>
+    
+    <script>
+        $(document).ready(function() {
+            $('.hellodoccard').hover(function() {
+                $(this).css('background-color', '#ff6d05');
+            }, function() {
+                $(this).css('background-color', '#FFFFFF');
+            });
+
+            $('.hellodoccard').on('click', function() {
+                $(this).css('background-color', '#6610f2');
+                var time = 2000;
+                setTimeout(function() {
+                    $(this).css('background-color', '#FFFFFF');
+                }, time);
+            });
+
+            playMusic = function(id) {
+                var audioname= id + '.mp3';
+                $("#" + id).addClass("disable-div");
+                var music = new Audio(audioname);
+                music.play();
+                $("#" + id).removeClass("disable-div");  
+            };
+        });
+    </script>
+  </body>
+</html>
