@@ -29,6 +29,10 @@
       .disable-div {
         pointer-events: none;
       }
+      .card {
+        border: none;
+        padding: 10%;
+      }
     </style>
   </head>
   <body>
@@ -79,8 +83,238 @@
       </div>
     </div>
   </section> -->
+  
+  <div class="album py-5 bg-light">
+    <div class="container">
 
-  <section>
+      <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card text-center" id="thirsty" onclick="playMusic('thirsty');">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="auto" role="img" aria-label="Placeholder: Thumbnail" src="thirsty.png"/>
+            <div class="card-body">
+              <h3 class="card-title fw-bold">தாகம்</h3>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card text-center" id="hungry" onclick="playMusic('hungry');">
+            <!--<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
+            <img class="bd-placeholder-img card-img-top" width="100%" height="auto" role="img" aria-label="Placeholder: Thumbnail" src="hungry.png"/>
+            <div class="card-body">
+              <h3 class="card-title fw-bold">பசிக்கிறது</h3>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card text-center" id="hungry" onclick="playMusic('tea');">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="auto" role="img" aria-label="Placeholder: Thumbnail" src="tea.png"/>
+            <div class="card-body">
+              <h3 class="card-title fw-bold">தேநீர்</h3>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card text-center" id="hungry" onclick="playMusic('coffee');">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="auto" role="img" aria-label="Placeholder: Thumbnail" src="coffee.png"/>
+            <div class="card-body">
+              <h3 class="card-title fw-bold">கொட்டைவடி நீர்</h3>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card text-center" id="hungry" onclick="playMusic('juice');">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="auto" role="img" aria-label="Placeholder: Thumbnail" src="juice.png"/>
+            <div class="card-body">
+              <h3 class="card-title fw-bold">சாறு</h3>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card text-center" id="tired" onclick="playMusic('tired');">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="auto" role="img" aria-label="Placeholder: Thumbnail" src="tired.png"/>
+            <div class="card-body">
+              <h3 class="card-title fw-bold">சோர்வாக</h3>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card text-center" id="sleepy" onclick="playMusic('sleepy');">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="auto" role="img" aria-label="Placeholder: Thumbnail" src="sleepy.png"/>
+            <div class="card-body">
+              <h3 class="card-title fw-bold">தூக்கம்</h3>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card text-center" id="sleepy" onclick="playMusic('doctor');">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="auto" role="img" aria-label="Placeholder: Thumbnail" src="doctor.png"/>
+            <div class="card-body">
+              <h3 class="card-title fw-bold">மருத்துவர்</h3>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card text-center" id="sleepy" onclick="playMusic('nurse');">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="auto" role="img" aria-label="Placeholder: Thumbnail" src="nurse.png"/>
+            <div class="card-body">
+              <h3 class="card-title fw-bold">செவிலி</h3>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card text-center" id="sleepy" onclick="playMusic('family');">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="auto" role="img" aria-label="Placeholder: Thumbnail" src="family.png"/>
+            <div class="card-body">
+              <h3 class="card-title fw-bold">குடும்பம்</h3>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card text-center" id="sleepy" onclick="playMusic('brushing');">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="auto" role="img" aria-label="Placeholder: Thumbnail" src="brushing.png"/>
+            <div class="card-body">
+              <h3 class="card-title fw-bold">பல் துலக்குதல்</h3>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card text-center" id="sleepy" onclick="playMusic('facewash');">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="auto" role="img" aria-label="Placeholder: Thumbnail" src="facewash.png"/>
+            <div class="card-body">
+              <h3 class="card-title fw-bold">முகம் கழுவுதல்</h3>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card text-center" id="sleepy" onclick="playMusic('bathing');">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="auto" role="img" aria-label="Placeholder: Thumbnail" src="bathing.png"/>
+            <div class="card-body">
+              <h3 class="card-title fw-bold">குளியல்</h3>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card text-center" id="sleepy" onclick="playMusic('toilet');">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="auto" role="img" aria-label="Placeholder: Thumbnail" src="toilet.png"/>
+            <div class="card-body">
+              <h3 class="card-title fw-bold">கழிவறை</h3>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card text-center" id="sleepy" onclick="playMusic('blanket');">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="auto" role="img" aria-label="Placeholder: Thumbnail" src="blanket.png"/>
+            <div class="card-body">
+              <h3 class="card-title fw-bold">போர்வை</h3>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card text-center" id="sleepy" onclick="playMusic('pillow');">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="auto" role="img" aria-label="Placeholder: Thumbnail" src="pillow.png"/>
+            <div class="card-body">
+              <h3 class="card-title fw-bold">தலையணை</h3>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card text-center" id="sleepy" onclick="playMusic('socks');">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="auto" role="img" aria-label="Placeholder: Thumbnail" src="socks.png"/>
+            <div class="card-body">
+              <h3 class="card-title fw-bold">சாக்ஸ்</h3>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card text-center" id="sleepy" onclick="playMusic('medicine');">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="auto" role="img" aria-label="Placeholder: Thumbnail" src="medicine.png"/>
+            <div class="card-body">
+              <h3 class="card-title fw-bold">குளியல்</h3>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card text-center" id="sleepy" onclick="playMusic('tv');">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="auto" role="img" aria-label="Placeholder: Thumbnail" src="tv.png"/>
+            <div class="card-body">
+              <h3 class="card-title fw-bold">டிவியை இயக்கவும்</h3>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card text-center" id="sleepy" onclick="playMusic('notv');">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="auto" role="img" aria-label="Placeholder: Thumbnail" src="notv.png"/>
+            <div class="card-body">
+              <h3 class="card-title fw-bold">டிவியை அணைக்கவும்</h3>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card text-center" id="sleepy" onclick="playMusic('light');">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="auto" role="img" aria-label="Placeholder: Thumbnail" src="light.png"/>
+            <div class="card-body">
+              <h3 class="card-title fw-bold">டிவியை அணைக்கவும்</h3>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card text-center" id="sleepy" onclick="playMusic('nolight');">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="auto" role="img" aria-label="Placeholder: Thumbnail" src="nolight.png"/>
+            <div class="card-body">
+              <h3 class="card-title fw-bold">டிவியை அணைக்கவும்</h3>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <!--<section>
     <div class="b-example-divider"></div>
 
     <div class="container px-4 py-5" id="icon-grid">
@@ -114,7 +348,7 @@
                 <h4 class="fw-bold mb-0">தூக்கம்</h4>
                 <p>எனக்கு தூக்கம் வருகிறது.</p>
             </div>
-        </div>
+        </div>-->
         <!--<div class="col d-flex align-items-start">
             <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#speedometer2"/></svg>
             <div>
@@ -142,19 +376,20 @@
             <h4 class="fw-bold mb-0">Featured title</h4>
             <p>Paragraph of text beneath the heading to explain the heading.</p>
             </div>
-        </div> -->
+        </div> 
         </div>
     </div>
-    </section>
+    </section>-->
 </main>
 
-<footer class="text-muted py-5">
+<footer class="py-5">
   <div class="container">
     <p class="float-end mb-1">
       <!--<a href="#">Back to top</a>-->
+      
     </p>
-    <!--<p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-    <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="/docs/5.1/getting-started/introduction/">getting started guide</a>.</p>-->
+    <p class="fs-5 fw-lighter h6">Icons courtesy: <a href="https://www.flaticon.com/">flaticon</a>. This site is for testing purpose.</p>
+    <!--<p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="/docs/5.1/getting-started/introduction/">getting started guide</a>.</p>-->
   </div>
 </footer>
 
@@ -164,17 +399,20 @@
     
     <script>
         $(document).ready(function() {
-            $('.hellodoccard').hover(function() {
+            $('.card').hover(function() {
                 $(this).css('background-color', '#ff6d05');
             }, function() {
                 $(this).css('background-color', '#FFFFFF');
+                $(this).css('color', '#000000');
             });
 
-            $('.hellodoccard').on('click', function() {
+            $('.card').on('click', function() {
                 $(this).css('background-color', '#6610f2');
+                $(this).css('color', '#ffffff');
                 var time = 2000;
                 setTimeout(function() {
                     $(this).css('background-color', '#FFFFFF');
+                    $(this).css('color', '#000000');
                 }, time);
             });
 
